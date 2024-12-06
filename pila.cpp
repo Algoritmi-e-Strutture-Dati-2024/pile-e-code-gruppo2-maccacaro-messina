@@ -45,7 +45,7 @@ public:
     // Restituisce l'elemento in cima alla pila senza rimuoverlo
     T top() const {
         if (isEmpty()) {
-            std::cout << "Errore: pila vuota. Nessun elemento in cima." << std::endl;
+            std::cout << "Nessun elemento in cima." << std::endl;
             return T(); // Restituisce un valore di default
         }
         return topNodo->valore;
@@ -68,12 +68,12 @@ int main() {
     pilaInteri.push(20);
     pilaInteri.push(30);
 
-    std::cout << "Elemento in cima: " << pilaInteri.top() << std::endl; // 30
-    std::cout << "Dimensione della pila: " << pilaInteri.size() << std::endl; // 3
+    std::cout << "Elemento in cima: " << pilaInteri.top() << std::endl; 
+    std::cout << "Dimensione della pila: " << pilaInteri.size() << std::endl; 
 
-    std::cout << "Pop: " << pilaInteri.pop() << std::endl; // 30
-    std::cout << "Elemento in cima: " << pilaInteri.top() << std::endl; // 20
-    std::cout << "Dimensione della pila: " << pilaInteri.size() << std::endl; // 2
+    std::cout << "Pop: " << pilaInteri.pop() << std::endl; 
+    std::cout << "Elemento in cima: " << pilaInteri.top() << std::endl; 
+    std::cout << "Dimensione della pila: " << pilaInteri.size() << std::endl; 
 
     return 0;
 }
