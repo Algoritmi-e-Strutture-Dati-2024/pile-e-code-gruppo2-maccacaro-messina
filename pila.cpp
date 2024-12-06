@@ -13,14 +13,6 @@ private:
     int lunghezzaPila;   // Numero di elementi nella pila
 
 public:
-
-    // Distruttore per liberare la memoria
-    Pila() {
-        while (!isEmpty()) {
-            pop();
-        }
-    }
-
     // Aggiunge un elemento alla pila
     void push(T elem) {
         Nodo* nuovo = new Nodo{elem, topNodo};
