@@ -23,7 +23,7 @@ public:
     // Rimuove l'elemento in cima alla pila e lo restituisce
     T pop() {
         if (isEmpty()) {
-            std::cout << "Errore: pila vuota. Impossibile eseguire pop." << std::endl;
+            std::cout << "Impossibile eseguire pop." << std::endl;
             return T(); // Restituisce un valore di default
         }
         Nodo* temp = topNodo;
